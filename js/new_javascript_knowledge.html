@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>学习过程中遇到的新的js知识测试页面</title>
+</head>
+<body>
+	<script type="text/javascript">
+	//测试Object.create()
+		function Car (desc,color) {
+			this.desc = desc;
+			this.color = color;
+		}
+		Car.prototype = {
+			getCarInfo: function () {
+				return 'This is a' + ' ' + this.color + ' ' + this.desc + '.';
+			}
+		};
+
+		var car = Object.create(Car.prototype);
+		car.color = "blue";
+		car.desc = "BMW";
+		console.log(car.getCarInfo());
+	</script>
+</body>
+</html>
