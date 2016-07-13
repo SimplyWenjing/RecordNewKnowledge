@@ -11,4 +11,14 @@
 	参考：http://www.lai18.com/content/1386795.html
 3、navigator.onLine 
 	HTML5定义的监测设备是在线还是离线的属性，true为在线，false为离线。
-	
+4、String.indexOf();
+	indexOf() 方法可返回某个指定的字符串值在字符串中首次出现的位置。之前用到的是只有一个参数，但是这个方法其实可以有第二个参数的。
+	语法：	
+		stringObject.indexOf(searchvalue,fromindex)
+	参数：
+		searchvalue:必须，规定需检索的字符串值。
+		fromindex：可选，可选的整数参数。规定在字符串中开始检索的位置。它的合法取值是 0 到 stringObject.length - 1。如省略该参数，则将从字符串的首字符开始检索。
+	说明：
+		该方法将从头到尾地检索字符串 stringObject，看它是否含有子串 searchvalue。开始检索的位置在字符串的 fromindex 处或字符串的开头（没有指定 fromindex 时）。如果找到一个 searchvalue，则返回 searchvalue 的第一次出现的位置。stringObject 中的字符位置是从 0 开始的。
+		indexOf() 方法对大小写敏感！
+		如果要检索的字符串值没有出现，则该方法返回 -1。
