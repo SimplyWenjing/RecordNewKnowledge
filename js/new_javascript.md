@@ -9,3 +9,6 @@
 		使用Object.create实现类式继承。见new_javascript_knowledge.html.
 2、Array.prototype.slice.call() 能将具有length属性的对象转成数组，除了IE下的节点集合（因为ie下的dom对象是以com对象的形式实现的，js对象与com对象不能进行转换） 
 	参考：http://www.lai18.com/content/1386795.html
+3、navigator.onLine 
+	HTML5定义的监测设备是在线还是离线的属性，true为在线，false为离线。
+	
