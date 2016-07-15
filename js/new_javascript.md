@@ -22,3 +22,11 @@
 		该方法将从头到尾地检索字符串 stringObject，看它是否含有子串 searchvalue。开始检索的位置在字符串的 fromindex 处或字符串的开头（没有指定 fromindex 时）。如果找到一个 searchvalue，则返回 searchvalue 的第一次出现的位置。stringObject 中的字符位置是从 0 开始的。
 		indexOf() 方法对大小写敏感！
 		如果要检索的字符串值没有出现，则该方法返回 -1。
+5、hasOwnProperty()
+	object.hasOwnProperty()用于指示一个对象自身(不包括原型链) 是否具有指定名称的属性。如果有，返回true，否则返回false。
+	语法：
+		object.hasOwnProperty(propertyName )
+	参数：	
+		object是对象实例，propertyName是属性名。
+	说明：
+		此方法不会检查对象的原型链中是否存在该属性，该属性只有是对象本身的一个成员才会返回true。想要查看对象(包括原型链)是否具备指定的属性，可以使用in操作符。
