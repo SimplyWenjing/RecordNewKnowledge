@@ -31,3 +31,14 @@
 	说明：
 		此方法不会检查对象的原型链中是否存在该属性，该属性只有是对象本身的一个成员才会返回true。想要查看对象(包括原型链)是否具备指定的属性，可以使用in操作符。
 		in 返回true ，hasOwnProperty返回false，就是存在于原型中的属性
+6、Sting.spilt()
+    split()函数用于使用指定分隔符分割字符串，并返回分割后的若干个子字符串组成的数组。即用于把一个字符串分割成字符串数组。
+    语法：
+    	stringObject.split(separator,howmany);
+    参数：
+    	separator：必填，字符串或者正则表达式；
+    	howmany：可选，Number类型，限制返回的数组中元素个数的最大值。
+    说明：
+    	（1）如果参数separator是字符串，则split()函数将直接根据该字符串进行分割，而不会试图转换为正则表达式；
+    	（2）如果指定的separator参数为空字符串("") ，那么stringObject中的每个字符之间都会被分割。
+    	（3）split()方法的返回值为Array类型，返回完成分割后的子字符串数组。子字符串中不会包含separator本身。！！！
