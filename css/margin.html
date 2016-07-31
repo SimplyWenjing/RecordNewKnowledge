@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>margin折叠问题</title>
+	<style type="text/css">
+	/*如果一个元素嵌套在另一个元素中，如果外面元素有边框，那么二者的外边距不会折叠，如果没有边框，则二者的上外边距会折叠*/
+		#outer{
+			width: 150px;
+			height: 150px;
+			margin:30px;
+			background-color: black;
+			/*border:1px solid black;*/
+		}
+		#inner{
+			width: 40px;
+			height: 40px;
+			margin:30px;
+			border:1px solid red;
+		}
+	</style>
+</head>
+<body>
+	<div id="outer">
+		<div id="inner"></div>
+	</div>
+
+</body>
+</html>
