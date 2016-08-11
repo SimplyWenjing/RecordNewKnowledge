@@ -48,3 +48,6 @@
 8. 类型转换   
    * true==3;//返回的是false，对true进行隐式类型转换，true==1,1==3，返回false
 9. 数组的join方法,可以使用不同的分隔符来构建数组字符串。
+10. arguments.callee 和 caller的区别   
+	* auguments.callee是一个指针，指向拥有这个arguments对象的函数，；
+	* caller是函数对象的一个属性，保存着调用当前函数的函数的引用。如果是在全局作用域中调用当前函数，它的值为null。arguments.callee.caller,指向拥有arguments对象的函数
