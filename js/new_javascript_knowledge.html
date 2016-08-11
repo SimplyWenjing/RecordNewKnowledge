@@ -44,6 +44,13 @@
 	var person = new Person();
 	console.log(person.hasOwnProperty("age"));
 	console.log("sex" in obj);
+
+
+	//数组的toString()
+	var arrTest = ["red","black","yellow"];
+	console.log(arrTest.toString());//red,black,yellow,返回的是一个字符串
+	console.log(arrTest.valueOf());//["red","black","yellow"],返回的还是一个数组
+	
 	</script>
 </body>
 </html>
