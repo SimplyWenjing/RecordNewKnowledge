@@ -59,4 +59,11 @@
 12. Math.random()    
 	* Math.random() 返回大于等于0小于1的一个随机数。
 	* 对于某些站点来说，可以利用它来随机显示一些名人名言和新闻事件。套用下面的公式，就可以利用Math.random()从某个整数范围内随机选择一个值    
-	公式： 值 = Math.floor(Math.random()*可能值的总数 + 第一个可能的值)
+	公式： 值 = Math.floor(Math.random()*可能值的总数 + 第一个可能的值)   
+13. ES6数组去重
+    //去除数组中重复元素，Set是类数组对象，其成员都是唯一的，没有重复的值，用Array.from将Set转为数组。
+  	function dedupe (array) {
+		return Array.from(new Set(array));
+  	}
+  	var array = new Array(1,2,3,3,4,2,1);
+  	console.log(dedupe(array));//[1,2,3,4]
