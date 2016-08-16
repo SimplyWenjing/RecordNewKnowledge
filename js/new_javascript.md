@@ -52,6 +52,7 @@
 ###10. arguments.callee 和 caller的区别    
 * auguments.callee是一个指针，指向拥有这个arguments对象的函数；
 * caller是函数对象的一个属性，保存着调用当前函数的函数的引用。如果是在全局作用域中调用当前函数，它的值为null。arguments.callee.caller,指向拥有arguments对象的函数
+
 ###11. apply() 和 call()    
        这两个方法的用途都是在特定的作用域中调用函数，实际上等于设置函数体内this对象的值。  apply():接收两个参数，一个是在其中运行函数的作用域，另一个是参数数组。第二个参数可以是Array的实例，也可以是arguments对象。 call()：与apply()方法的作用相同，区别在于接收参数的方式不同。call()必须要把传递给函数的参数逐个列举出来。 二者最重要的作用是扩充函数的作用域，并且对象和方法不会有耦合。
 ###12. Math.random() Math.random()    
@@ -59,6 +60,7 @@
 * 对于某些站点来说，可以利用它来随机显示一些名人名言和新闻事件。
 * 套用下面的公式，就可以利用Math.random()从某个整数范围内随机选择一个值    
 * 公式： 值 = Math.floor(Math.random()*可能值的总数 + 第一个可能的值)   
+
 ###13. ES6数组去重
     //去除数组中重复元素，Set是类数组对象，其成员都是唯一的，没有重复的值，用Array.from将Set转为数组。
   	function dedupe (array) {
